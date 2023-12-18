@@ -33,14 +33,26 @@ function NoActive({ setActive }: { setActive: any }) {
 
 function UserEquipmentActive({ setActive }: { setActive: any }) {
   return (
-    <div className="flex flex-row space-x-20 items-center">
-      <div style={{ minHeight: "48rem", minWidth: "36rem" }} className="w-52 rounded-md bg-white relative">
+    <div className="flex flex-row items-center">
+      <div>
+        <div style={{ minWidth: "36rem", maxWidth: "42rem", width: "30vw", paddingTop: "min(130%, 90vh)" }} className="h-min rounded-md bg-white relative">
+          <div className="py-7 px-7 absolute top-0 left-0">
+            <p className="font-bold text-lg">User Equipments</p>
+            <p className="mt-2 text-sm text-gray-500">Some description of the purpose of this network component.</p>
+          </div>
+        </div>
       </div>
-      <div className="h-60 w-52 rounded-md bg-white relative">
+      <div style={{marginLeft: "min(max(4vw, 3rem), 5rem)"}}>
+        <div style={{ minWidth: "11rem", maxWidth: "13rem", width: "13vw", paddingTop: "120%" }} className="h-min rounded-md bg-white relative">
+        </div>
       </div>
-      <div className="h-60 w-52 rounded-md bg-white relative">
+      <div style={{marginLeft: "min(max(4vw, 3rem), 5rem)"}}>
+        <div style={{ minWidth: "11rem", maxWidth: "13rem", width: "13vw", paddingTop: "120%" }} className="h-min rounded-md bg-white relative">
+        </div>
       </div>
-      <div className="h-60 w-52 rounded-md bg-white relative">
+      <div style={{marginLeft: "min(max(4vw, 3rem), 5rem)"}}>
+        <div style={{ minWidth: "11rem", maxWidth: "13rem", width: "13vw", paddingTop: "120%" }} className="h-min rounded-md bg-white relative">
+        </div>
       </div>
     </div>
   )
@@ -64,7 +76,7 @@ export default function Home() {
   }
 
   return (
-    <main onClick={() => { if (active != 0) { setActive(0) } }} className="flex min-h-screen flex-col items-center justify-between p-24 overflow-hidden">
+    <main onClick={() => { if (active != 0) { setActive(0) } }} className="flex min-h-screen flex-col items-center justify-between px-24 py-8 overflow-hidden">
       <p></p>
       {content({ setActive })}
       <p></p>
