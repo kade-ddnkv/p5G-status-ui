@@ -2,16 +2,30 @@
 
 import { useState } from 'react'
 
+// function Block() {
+//   return (
+    
+//   )
+// }
+
 function NoActive({ setActive }: { setActive: any }) {
   return (
-    <div className="flex flex-row space-x-20">
-      <div onClick={() => setActive(1)} className="h-60 w-52 rounded-md bg-white relative">
+    <div className="flex flex-row">
+      <div>
+        <div onClick={() => setActive(1)} style={{ minWidth: "11rem", maxWidth: "13rem", width: "13vw", paddingTop: "120%" }} className="h-min rounded-md bg-white relative">
+        </div>
       </div>
-      <div className="xl:h-60 xl:w-52 sm:h-52 sm:w-44 rounded-md bg-white relative">
+      <div style={{marginLeft: "min(max(4vw, 3rem), 5rem)"}}>
+        <div style={{ minWidth: "11rem", maxWidth: "13rem", width: "13vw", paddingTop: "120%" }} className="h-min rounded-md bg-white relative">
+        </div>
       </div>
-      <div className="h-60 w-52 rounded-md bg-white relative">
+      <div style={{marginLeft: "min(max(4vw, 3rem), 5rem)"}}>
+        <div style={{ minWidth: "11rem", maxWidth: "13rem", width: "13vw", paddingTop: "120%" }} className="h-min rounded-md bg-white relative">
+        </div>
       </div>
-      <div className="h-60 w-52 rounded-md bg-white relative">
+      <div style={{marginLeft: "min(max(4vw, 3rem), 5rem)"}}>
+        <div style={{ minWidth: "11rem", maxWidth: "13rem", width: "13vw", paddingTop: "120%" }} className="h-min rounded-md bg-white relative">
+        </div>
       </div>
     </div>
   )
