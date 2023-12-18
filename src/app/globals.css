@@ -10,3 +10,38 @@
 body {
   background: var(--background-hex)
 }
+
+.dot {
+  height: 9px;
+  width: 9px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #85CE6A;
+}
+
+.error {
+  background-color: #CC6A6A;
+}
+
+table {
+  border-collapse: collapse;
+}
+tr { 
+  border: solid;
+  border-width: 1px 0;
+  border-color: #e4e4e4;
+}
+tr:first-child {
+  border-top: none;
+}
+tr:last-child {
+  border-bottom: none;
+}
+
+tr > td {
+  padding: 0.6rem;
+}
